@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #d6e1ff;
+}
+.container {
+  width: 300px;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 1px 1px 20px black;
+}
+#image-hero {
+  width: 300px;
+  border-radius: 15px 15px 0px 0px;
+}
+.textos {
+  text-align: center;
+  color: #121624;
+  padding: 0px 28px 0px 28px;
+}
+.textos h2 {
+  margin-top: 40px;
+}
+.textos p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.music {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fe;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.music h2 {
+  font-size: 15px;
+}
+.music p {
+  font-size: 12px;
+}
+.music a {
+  margin-left: 40px;
+  color: #382ae1;
+}
+.music a:hover {
+  opacity: 80%;
+  text-decoration: none;
+}
+.nome-preço {
+  margin-left: 10px;
+}
+button {
+  border: none;
+  width: 258px;
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#button1 {
+  color: white;
+  background-color: #382ae1;
+}
+#button1:hover {
+  background-color: #766cf1;
+  cursor: pointer;
+}
+#button2 {
+  background-color: white;
+  opacity: 80%;
+  color: #121624;
+}
+#button2:hover {
+  opacity: 100%;
+  cursor: pointer;
+}

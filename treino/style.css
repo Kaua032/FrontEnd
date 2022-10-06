@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  background-color: #5a46a6;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 0px 40px 0px 40px;
+}
+.container {
+  width: 75%;
+  background-image: linear-gradient(270deg, #8070ea, #ee9bfd);
+  border-radius: 30px;
+  margin-right: 10px;
+  padding-bottom: 44px;
+  box-shadow: 1px 1px 5px black;
+}
+.container2 {
+  background-image: linear-gradient(360deg, #8070ea, #ee9bfd);
+  border-radius: 30px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 5px black;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px 40px 100px;
+}
+.logo {
+  color: #5a46a6;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+li {
+  margin-left: 35px;
+  color: white;
+  font-size: 20px;
+}
+ul > button {
+  margin-left: 65px;
+  color: white;
+  background-color: #7b5cf8;
+  font-size: 17px;
+  border: none;
+  padding: 10px 17px 10px 17px;
+  border-radius: 5px;
+}
+ul > button:hover {
+  cursor: pointer;
+}
+h2 {
+  color: white;
+}
+.part h2 {
+  font-size: 40px;
+  margin-left: 100px;
+}
+.mini-main {
+  display: flex;
+  justify-content: space-between;
+}
+.mini-main p {
+  color: white;
+  padding-right: 300px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.mini-main button {
+  border: none;
+  padding: 10px 17px 10px 17px;
+  color: white;
+  background-color: #7b5cf8;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.mini-main button:hover {
+  cursor: pointer;
+}
+#h21 {
+  margin-top: 40px;
+  padding-right: 300px;
+}
+.image img {
+  margin-right: 100px;
+  margin-top: 60px;
+}
