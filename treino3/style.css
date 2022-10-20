@@ -6,6 +6,14 @@
 body {
   background-color: #d2f5e6;
 }
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page1 {
+  width: 90%;
+}
 #logo {
   border: 2px #1da598 solid;
   width: 50px;
@@ -15,6 +23,10 @@ header {
   display: flex;
   justify-content: right;
   width: 100%;
+  margin: 30px 0px 20px 0px;
+}
+#divheader {
+  margin-right: 113px;
 }
 header > div {
   display: flex;
@@ -23,5 +35,129 @@ header > div {
 }
 #logo {
   border-radius: 30px;
-  margin-right: 10px;
+  margin-right: 25px;
+}
+#introducao {
+  display: flex;
+  background-color: #25aba2;
+  border-radius: 20px;
+}
+#introducao > img {
+  margin-top: -160px;
+  width: 50vw;
+}
+#introducao > div {
+  margin-top: 70px;
+  color: white;
+}
+#produtos {
+  width: 95%;
+  margin: -160px 0px 0px 40px;
+}
+#p1 {
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 5px;
+}
+#p2 {
+  font-size: 77px;
+  font-weight: 300;
+}
+#p3 {
+  margin-top: -30px;
+  font-size: 290px;
+  font-weight: bolder;
+}
+#div1 {
+  display: flex;
+  justify-content: space-between;
+}
+#div2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#div3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.block {
+  margin: 10px 0px 10px 0px;
+  padding-bottom: 30px;
+  background-color: white;
+  width: 520px;
+  height: 450px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 0px #00000028;
+}
+.block > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px 0px 0px 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #c65d5c;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.block > img {
+  margin-left: 85px;
+  width: 300px;
+}
+.block > p {
+  margin-left: 120px;
+  font-size: 40px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  background-color: white;
+  height: 100px;
+}
+footer > img {
+  margin-left: 130px;
+  width: 70px;
+  height: 70px;
+}
+footer > p {
+  margin-left: 20px;
+  font-size: 15px;
+}
+.icons {
+  width: 20px;
+}
+#contato1 {
+  display: flex;
+}
+#contato2 {
+  display: flex;
+}
+#textos {
+  margin-left: 170px;
+}
+#texto1 {
+  font-size: 35px;
+  text-align: center;
+}
+#texto2 {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  background-color: #25aba2;
+}
+#contatos {
+  margin-left: 560px;
+}
+#contato2 {
+  margin-top: 8px;
+}
+#contato1 > p {
+  margin-left: 5px;
+}
+#contato2 > p {
+  margin-left: 5px;
 }
