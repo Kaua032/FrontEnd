@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #012030;
+    gap: 40px;
+}
+h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 112px;
+}
+.game{
+    background: #13678A;
+    border-radius: 10px;
+    width: 902px;
+    height: 602px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.qua{
+    height: 198px;
+    width: 298px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 130px;
+    height: 130px;
+}

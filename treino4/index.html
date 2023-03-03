@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <script src="./script.js"></script>
     <title>Filter</title>
   </head>
   <body>
@@ -14,7 +13,7 @@
       <h1>How can I help you?</h1>
       <div class="input-wrapper">
         <label for="filter" class="sr-only">Filter</label>
-        <input id="filter" type="text" placeholder="Filter" />
+        <input id="filter" type="text" placeholder="Filter" onchange="filterCards()" />
         <i class="ph-magnifying-glass"></i>
       </div>
     </header>
@@ -71,5 +70,6 @@
         </li>
       </ul>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

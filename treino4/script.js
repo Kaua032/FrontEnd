@@ -1,18 +1,19 @@
-const filterElement = document.querySelector("header input");
+const filterElement = document.querySelector("#filter");
 const cards = document.querySelectorAll(".cards li");
 
-filterElement.addEventListener("input", filterCards);
-
+filterElement.addEventListener('change', filterCards);
 function filterCards() {
-  if (filterElement.value !== "") {
+  if (filterElement.value != "") {
+    console.log("fds")
     for (let card of cards) {
-      let title = card.querySelector("h2");
-      title = title.textContent.toLowerCase;
+      let title = document.querySelector(".header h2");
+      title = title.textContent.toLowerCase();
       let filterText = filterElement.value.toLowerCase();
-      if (!title.includes(filterText)) {
-        card.style.display = "none";
-      } else {
+      // console.log(title.includes(filterText))
+      if (title.includes(filterText)) {
         card.style.display = "block";
+      } else {
+        card.style.display = "none";
       }
     }
   } else {
