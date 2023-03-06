@@ -1,111 +1,172 @@
 let winner = document.getElementById("info")
 let i = 0
-var space0 = '', space1 = '', space2 = ''
+let ocupation = [0,0,0,0,0,0,0,0,0]
+
+
+function analize(){
+    if(i > 0){
+        if(ocupation[0] == ocupation[1] && ocupation[0] == ocupation[2] && ocupation[0] == 1){
+            console.log("O x ganhou")
+            return
+        }
+        else if(ocupation[0] == ocupation[1] && ocupation[0] == ocupation[2] && ocupation[0] == 2){
+            console.log("O o ganhou") 
+            return
+        }
+
+        else if(ocupation[2] == ocupation[5] && ocupation[2] == ocupation[8] && ocupation[2] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[2] == ocupation[5] && ocupation[2] == ocupation[8] && ocupation[2] == 2){
+            console.log("O o ganhou")
+            return
+        }
+
+        else if(ocupation[8] == ocupation[7] && ocupation[8] == ocupation[6] && ocupation[8] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[8] == ocupation[7] && ocupation[8] == ocupation[6] && ocupation[8] == 2){
+            console.log("O o ganhou")
+                return
+        }
+
+        else if(ocupation[0] == ocupation[3] && ocupation[0] == ocupation[6] && ocupation[0] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[0] == ocupation[3] && ocupation[0] == ocupation[6] && ocupation[0] == 2){
+            console.log("O o ganhou")
+                return
+        }
+
+        else if(ocupation[0] == ocupation[4] && ocupation[0] == ocupation[8] && ocupation[0] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[0] == ocupation[4] && ocupation[0] == ocupation[8] && ocupation[0] == 2){
+            console.log("O o ganhou")
+                return
+        }
+
+        else if(ocupation[2] == ocupation[4] && ocupation[2] == ocupation[6] && ocupation[2] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[2] == ocupation[4] && ocupation[2] == ocupation[6] && ocupation[2] == 2){
+            console.log("O o ganhou")
+                return
+        }
+
+        else if(ocupation[1] == ocupation[4] && ocupation[1] == ocupation[7] && ocupation[1] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[1] == ocupation[4] && ocupation[1] == ocupation[7] && ocupation[1] == 2){
+            console.log("O o ganhou")
+                return
+        }
+
+
+        else if(ocupation[3] == ocupation[4] && ocupation[3] == ocupation[5] && ocupation[3] == 1){
+                console.log("O x ganhou")
+                return
+        }
+        else if(ocupation[3] == ocupation[4] && ocupation[3] == ocupation[5] && ocupation[3] == 2){
+            console.log("O o ganhou")
+                return
+        }
+        return
+    }
+    else if(i == 9){
+        console.log("Deu velha!")
+    }
+}
 
 
 function played0(){
     let space = document.getElementById("0")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            space0 = "x"
+            ocupation[0] = 1
             i++
-            return space0
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            space0 = "x"
-            i++
-            return space0
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            space0 = "o"
+            ocupation[0] = 2
             i++
-            return space0
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
     }
-    i++
-    
 }
 function played1(){
     let space = document.getElementById("1")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            space1 = 'x'
+            ocupation[1] = 1
             i++
-            return space1
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            space1 = 'x'
-            i++
-            return space1
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            space1 = 'o'
+            ocupation[1] = 2
             i++
-            return space1
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
     }
-    i++
-    
 }
 function played2(){
     let space = document.getElementById("2")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            space2 = 'x'
+            ocupation[2] = 1
             i++
-            return space2
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            space2 = 'x'
-            i++
-            return space2
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            space2 = 'o'
+            ocupation[2] = 2
             i++
-            return space2
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
     }
-    i++
 }
 function played3(){
     let space = document.getElementById("3")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            let space3 = "x"
+            ocupation[3] = 1
             i++
-            return space3
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            let space3 = "x"
-            i++
-            return space3
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            let space3 = "o"
+            ocupation[3] = 2
             i++
-            return space3
+            analize()
+            return
         }
     }
     else{
@@ -116,23 +177,19 @@ function played3(){
 function played4(){
     let space = document.getElementById("4")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            let space4 = "x"
+            ocupation[4] = 1
             i++
-            return space4
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            let space4 = "x"
-            i++
-            return space4
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            let space4 = "o"
+            ocupation[4] = 2
             i++
-            return space4
+            analize()
+            return
         }
     }
     else{
@@ -143,119 +200,91 @@ function played4(){
 function played5(){
     let space = document.getElementById("5")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            let space5 = "x"
+            ocupation[5] = 1
             i++
-            return space5
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            let space5 = "x"
-            i++
-            return space5
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            let space5 = "o"
+            ocupation[5] = 2
             i++
-            return space5
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
     }
-    i++
 }
 function played6(){
     let space = document.getElementById("6")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            let space6 = "x"
+            ocupation[6] = 1
             i++
-            return space6
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            let space6 = "x"
-            i++
-            return space6
-            
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            let space6 = "o"
+            ocupation[6] = 2
             i++
-            return space6
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
     }
-    i++
 }
+
 function played7(){
     let space = document.getElementById("7")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            let space7 = "x"
+            ocupation[7] = 1
             i++
-            return space7
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            let space7 = "x"
-            i++
-            return space7
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            let space7 = "o"
+            ocupation[7] = 2
             i++
-            return space7
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
     }
-    i++
 }
+
+
 function played8(){
     let space = document.getElementById("8")
     if(space.innerHTML == ''){
-        if(i == 0){
+        if(i % 2 == 0){
             space.innerHTML = "<img src='./img/x.png'></img>"
-            let space8 = "x"
+            ocupation[8] = 1
             i++
-            return space8
-        }
-        else if(i % 2 == 0){
-            space.innerHTML = "<img src='./img/x.png'></img>"
-            let space8 = "x"
-            i++
-            return space8
+            analize()
+            return
         }
         else if(i % 2 != 0){
             space.innerHTML = "<img src='./img/circle.png'></img>"
-            let space8 = "o"
+            ocupation[8] = 2
             i++
-            return space8
+            analize()
+            return
         }
     }
     else{
         alert("Desculpe, mas o espaço já está preenchido ")
-    }
-    i++
-}
-function analysis(){
-    if(space0 == space1 && space0 == space2){
-        if(space0 == "x"){
-            winner.innerHTML = "<p>O x Vence!</p>"
-        }
-        else{
-            winner.innerHTML = "<p>O o Vence!</p>"
-        }
     }
 }
