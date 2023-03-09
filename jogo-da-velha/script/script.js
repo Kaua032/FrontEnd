@@ -264,8 +264,6 @@ function analize() {
       return;
     }
     return;
-  } else if (i == 9) {
-    console.log("Deu velha!");
   }
 }
 function countWin() {
