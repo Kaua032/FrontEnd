@@ -20,6 +20,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[0] == ocupation[1] &&
@@ -36,6 +39,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[2] == ocupation[5] &&
@@ -52,6 +58,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[2] == ocupation[5] &&
@@ -68,6 +77,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[8] == ocupation[7] &&
@@ -84,6 +96,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[8] == ocupation[7] &&
@@ -100,6 +115,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[0] == ocupation[3] &&
@@ -116,6 +134,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[0] == ocupation[3] &&
@@ -132,6 +153,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[0] == ocupation[4] &&
@@ -148,6 +172,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[0] == ocupation[4] &&
@@ -164,6 +191,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       console.log("O o ganhou");
       return;
     } else if (
@@ -181,6 +211,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[2] == ocupation[4] &&
@@ -197,6 +230,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[1] == ocupation[4] &&
@@ -213,6 +249,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[1] == ocupation[4] &&
@@ -229,6 +268,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[3] == ocupation[4] &&
@@ -245,6 +287,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     } else if (
       ocupation[3] == ocupation[4] &&
@@ -261,6 +306,9 @@ function analize() {
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
       countWin();
+      setTimeout(() => {
+        toRestore()
+      }, "500");
       return;
     }
     return;
