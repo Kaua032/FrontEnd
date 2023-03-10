@@ -2,7 +2,8 @@ let i = 0;
 let ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 let count_win_x = 0;
 let count_win_o = 0;
-
+let count_old = 0;
+let win = 0;
 function analize() {
   if (i > 0) {
     if (
@@ -19,9 +20,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -38,9 +40,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -57,9 +60,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -76,9 +80,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -95,9 +100,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -114,9 +120,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -133,9 +140,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -152,9 +160,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -171,9 +180,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -190,9 +200,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       console.log("O o ganhou");
       return;
@@ -210,9 +221,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -229,9 +241,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -248,9 +261,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -267,9 +281,10 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -286,9 +301,10 @@ function analize() {
       count_win_x++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
     } else if (
@@ -305,11 +321,20 @@ function analize() {
       count_win_o++;
       ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
       i = 0;
+      win++;
       countWin();
       setTimeout(() => {
-        toRestore()
+        toRestore();
       }, "500");
       return;
+    } else if (i == 9) {
+      count_old++;
+      document.getElementById("velha").innerHTML = `${count_old}`;
+      ocupation = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+      i = 0;
+      setTimeout(() => {
+        toRestore();
+      }, "1000");
     }
     return;
   }
@@ -318,19 +343,18 @@ function countWin() {
   document.getElementById("winners_x").innerHTML = `${count_win_x}`;
   document.getElementById("winners_o").innerHTML = `${count_win_o}`;
 }
-
-function played0() {
-  let space = document.getElementById("0");
+function played(id) {
+  let space = document.getElementById(`${id}`);
   if (space.innerHTML == "") {
     if (i % 2 == 0) {
       space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[0] = 1;
+      ocupation[id] = 1;
       i++;
       analize();
       return;
     } else if (i % 2 != 0) {
       space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[0] = 2;
+      ocupation[id] = 2;
       i++;
       analize();
       return;
@@ -339,171 +363,6 @@ function played0() {
     alert("Desculpe, mas o espaço já está preenchido ");
   }
 }
-function played1() {
-  let space = document.getElementById("1");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[1] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[1] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-}
-function played2() {
-  let space = document.getElementById("2");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[2] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[2] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-}
-function played3() {
-  let space = document.getElementById("3");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[3] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[3] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-  i++;
-}
-function played4() {
-  let space = document.getElementById("4");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[4] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[4] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-  i++;
-}
-function played5() {
-  let space = document.getElementById("5");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[5] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[5] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-}
-function played6() {
-  let space = document.getElementById("6");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[6] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[6] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-}
-
-function played7() {
-  let space = document.getElementById("7");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[7] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[7] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-}
-
-function played8() {
-  let space = document.getElementById("8");
-  if (space.innerHTML == "") {
-    if (i % 2 == 0) {
-      space.innerHTML = "<img src='./img/x.png'></img>";
-      ocupation[8] = 1;
-      i++;
-      analize();
-      return;
-    } else if (i % 2 != 0) {
-      space.innerHTML = "<img src='./img/circle.png'></img>";
-      ocupation[8] = 2;
-      i++;
-      analize();
-      return;
-    }
-  } else {
-    alert("Desculpe, mas o espaço já está preenchido ");
-  }
-}
-
 function toRestore() {
   for (let i = 0; i < 9; i++) {
     document.getElementById(`${i}`).innerHTML = "";

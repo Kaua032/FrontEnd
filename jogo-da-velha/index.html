@@ -21,95 +21,88 @@
       <p id="winners_x">0</p>
       <img src="./img/circle.png" alt="" />
       <p id="winners_o">0</p>
+      <img src="./img/velha.png" alt="" />
+      <p id="velha">0</p>
     </div>
     <div class="game">
       <div
         class="qua"
-        onclick="played0()"
+        id="0"
+        onclick="played(this.id)"
         style="
           border-bottom: 2px solid #9aeba3;
           border-right: 2px solid #9aeba3;
         "
-      >
-        <div class="img" id="0"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played1()"
+        id="1"
+        onclick="played(this.id)"
         style="
           border-bottom: 2px solid #9aeba3;
           border-left: 2px solid #9aeba3;
           border-right: 2px solid #9aeba3;
         "
-      >
-        <div class="img" id="1"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played2()"
+        id="2"
+        onclick="played(this.id)"
         style="border-bottom: 2px solid #9aeba3; border-left: 2px solid #9aeba3"
-      >
-        <div class="img" id="2"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played3()"
+        id="3"
+        onclick="played(this.id)"
         style="
           border-bottom: 2px solid #9aeba3;
           border-right: 2px solid #9aeba3;
           border-top: 2px solid #9aeba3;
         "
-      >
-        <div class="img" id="3"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played4()"
+        id="4"
+        onclick="played(this.id)"
         style="
           border-bottom: 2px solid #9aeba3;
           border-right: 2px solid #9aeba3;
           border-top: 2px solid #9aeba3;
           border-left: 2px solid #9aeba3;
         "
-      >
-        <div class="img" id="4"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played5()"
+        id="5"
+        onclick="played(this.id)"
         style="
           border-bottom: 2px solid #9aeba3;
           border-top: 2px solid #9aeba3;
           border-left: 2px solid #9aeba3;
         "
-      >
-        <div class="img" id="5"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played6()"
+        id="6"
+        onclick="played(this.id)"
         style="border-right: 2px solid #9aeba3; border-top: 2px solid #9aeba3"
-      >
-        <div class="img" id="6"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played7()"
+        id="7"
+        onclick="played(this.id)"
         style="
           border-right: 2px solid #9aeba3;
           border-top: 2px solid #9aeba3;
           border-left: 2px solid #9aeba3;
         "
-      >
-        <div class="img" id="7"></div>
-      </div>
+      ></div>
       <div
         class="qua"
-        onclick="played8()"
+        id="8"
+        onclick="played(this.id)"
         style="border-top: 2px solid #9aeba3; border-left: 2px solid #9aeba3"
-      >
-        <div class="img" id="8"></div>
-      </div>
+      ></div>
     </div>
     <button id="restore" onclick="toRestore()">
       <img src="./icons/reiniciar.png" alt="" />
